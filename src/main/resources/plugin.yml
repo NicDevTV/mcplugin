@@ -10,14 +10,12 @@ commands:
     description: "Antwortet mit Pong."
     usage: "/<command>"
     permission: mcplugin.command.ping
-    permission-message: "§cDu hast keine Berechtigung, diesen Befehl zu nutzen."
 
   vanish:
     description: "Schaltet Vanish ein/aus."
     usage: "/<command>"
     aliases: [v]
     permission: mcplugin.command.vanish
-    permission-message: "§cDu hast keine Berechtigung, diesen Befehl zu nutzen."
 
 permissions:
   mcplugin.command.ping:

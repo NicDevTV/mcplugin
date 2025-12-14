@@ -71,7 +71,7 @@ Hinweis: `mcplugin.command.ping` ist standardmäßig für alle Spieler aktiviert
 ## FAQ
 Q: Ich sehe Spieler nicht, obwohl sie vanished sind — was tun?
 
-A: Prüfe, ob du die Permission `mcplugin.vanish.see` besitzt.
+A: Prüfe, ob du die Permission `mcplugin.vanish.see` besitzt. (Updatet nur bei neuen Vanish oder Join)
 
 ---
 
