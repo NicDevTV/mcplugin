@@ -63,8 +63,6 @@ Hinweis: `mcplugin.command.ping` ist standardmäßig für alle Spieler aktiviert
 ## Konfiguration & Hinweise
 - Plugin-Metadaten und Commands sind in `src/main/resources/plugin.yml` definiert.
 - Datenbank: SQLite wird als lokale Persistenz genutzt (`org.xerial:sqlite-jdbc`).
-- Packaging: `maven-shade-plugin` ist konfiguriert; Minimierung ist aktiviert, aber auf zentrale Bibliotheken beschränkt (z. B. kotlin-stdlib, sqlite-jdbc), um Laufzeitprobleme zu vermeiden.
-- Kotlin-JVM-Target: aktuell auf JVM 17 eingestellt (`pom.xml`). Wenn du Java 21 nutzen möchtest, passe die Werte in `pom.xml` (`maven.compiler.target`, `kotlin.compiler.jvmTarget`) an.
 
 ---
 
