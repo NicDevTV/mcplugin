@@ -1,0 +1,37 @@
+name: MCPlugin
+main: tv.nicdev.mcplugin.MCPlugin
+version: 1.0.0
+api-version: 1.21
+description: "Ein mini Beispiel-Plugin, das einen Ping-Befehl und Willkommensnachrichten liefert, inklusive simplem Vanish-System."
+author: NicDevTV
+
+commands:
+  ping:
+    description: "Antwortet mit Pong."
+    usage: "/<command>"
+    permission: mcplugin.command.ping
+    permission-message: "§cDu hast keine Berechtigung, diesen Befehl zu nutzen."
+
+  vanish:
+    description: "Schaltet Vanish ein/aus."
+    usage: "/<command>"
+    aliases: [v]
+    permission: mcplugin.command.vanish
+    permission-message: "§cDu hast keine Berechtigung, diesen Befehl zu nutzen."
+
+permissions:
+  mcplugin.command.ping:
+    description: "Erlaubt die Nutzung des Ping-Befehls."
+    default: true
+
+  mcplugin.command.vanish:
+    description: "Erlaubt die Nutzung des Vanish-Befehls."
+    default: op
+
+  mcplugin.vanish.see:
+    description: "Erlaubt das Sehen von Spielern, die vanished sind."
+    default: op
+
+  mcplugin.vanish.notify:
+    description: "Erlaubt das Empfangen von Vanish-Notifies (wer geht in Vanish/verlässt ihn)."
+    default: op
